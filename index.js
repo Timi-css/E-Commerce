@@ -23,7 +23,7 @@ app.get("/api/test", () => {
 app.use(express.json());
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
-app.use("/api/product", productRoute);
+app.use("/api/products", productRoute);
 
 app.listen(process.env.PORT || 8080, () => {
   console.log("Server is up and running :)");
